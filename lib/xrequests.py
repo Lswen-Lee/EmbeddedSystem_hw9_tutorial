@@ -42,7 +42,7 @@ def request(method, url, data=None, json=None, headers={}, stream=None):
     if proto == "http:":
         port = 80
     elif proto == "https:":
-        import ssl
+        import ssl #:((((
         port = 443
     else:
         raise ValueError("Unsupported protocol: " + proto)
